@@ -1,0 +1,44 @@
+local Lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/modern"))()
+--[[
+Functions:
+Lib:Tab(name)
+Tab:Button(text, func)
+Tab:DropDown(text, drops, func)
+Tab:Label(name, text)
+Tab:TextBox(text, func)
+Tab:Toggle(text, func)
+]]--
+local ExampleTab = Lib:Tab("Admin Detector")
+ExampleTab:Toggle("Kick", function(state)
+if state then
+PrintToggle = true
+while PrintToggle do
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/veryskilledperson/newadmins/main/kickadmuins'),true))()--kick admin
+wait()
+end
+else
+PrintToggle = false
+end
+end)
+ExampleTab:Toggle("Server Hop", function(state)
+if state then
+PrintToggle = true
+while PrintToggle do
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/veryskilledperson/newadmins/main/server%20hopadmin'),true))()--server hop admin
+wait()
+end
+else
+PrintToggle = false
+end
+end)
+ExampleTab:Toggle("Normal", function(state)
+if state then
+PrintToggle = true
+while PrintToggle do
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/veryskilledperson/newadmins/main/README.md'),true))()--normal
+wait()
+end
+else
+PrintToggle = false
+end
+end)
